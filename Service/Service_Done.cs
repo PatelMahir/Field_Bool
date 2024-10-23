@@ -15,11 +15,13 @@ namespace Field_Bool.Service
         {
             var employees = _context.ABCs.ToList();             //.ToList(); // Fetch all employees
             var zeroIndices = new List<int>();
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < employees.Count; i++)
             {
-                if (employees[i].IsAvail)
+                if (!employees[i].IsAvail)
                 {
-                    zeroIndices.Add(i);
+                    zeroIndices.Add(i+1);
+                    //? k=_context.ABCs.AddRange(employees[i]);
+                    //_context.SaveChanges(); // Save changes to database
                 }
             }
             return new Response

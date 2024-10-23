@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Field_Bool.Models;
+using Microsoft.EntityFrameworkCore;
 namespace Field_Bool.DB_Context
 {
     public class AppDbContext:DbContext
