@@ -1,0 +1,6 @@
+@Field_Bool_HostAddress = http://localhost:5268
+
+GET {{Field_Bool_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
